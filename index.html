@@ -849,10 +849,13 @@
             </p>
 
             <form class="contact-form">
-                <input type="text" name="first_name" placeholder="First Name" required />
-                <input type="text" name="last_name" placeholder="Last Name" required />
-                <input type="tel" placeholder="Phone Number" required />
-                <input type="email" placeholder="Email Address" />
+                <div class="name-row">
+                    <input type="text" name="first_name" placeholder="First Name" required />
+                    <input type="text" name="last_name" placeholder="Last Name" required />
+                </div>
+
+                <input type="tel" name="phone" placeholder="Phone Number" required />
+                <input type="email" name="email" placeholder="Email Address" />
 
                 <select id="service-select" required>
                     <option value="">Select a Service</option>
@@ -866,16 +869,20 @@
 
                 <select id="preparer-select" disabled>
                     <option value="">Select a Tax Preparer (choose Tax Preparation first)</option>
-                    <option>Severe Jacquet</option>
+                    <option>Tax Preparer 1</option>
                     <option>Tax Preparer 2</option>
                     <option>Tax Preparer 3</option>
                 </select>
+                <label for="appointment-date">Preferred Date</label>
+                <input type="date" name="appointment_date" required />
+                <label for="appointment-time">Preferred Time</label>
+                <input type="time" name="appointment_time" required />
 
-                <input type="date" required />
-                <input type="time" required />
-                <textarea placeholder="Write any questions or details here"></textarea>
+                <textarea name="message" placeholder="Write any questions or details here"></textarea>
+
                 <button type="submit" class="btn">Book Tax Appointment</button>
             </form>
+
         </div>
     </section>
 
