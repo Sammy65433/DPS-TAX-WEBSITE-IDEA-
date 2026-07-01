@@ -53,3 +53,74 @@ If you want live-reload while editing, install the **Live Server** extension in 
 ---
 
 Questions about the site? Reach out before making any changes so we can keep track of edits.
+
+
+
+
+Use clean, professional, people-focused images. Best for your site:
+
+For `We Speak Your Language`:
+- diverse professionals talking with clients
+- paperwork or document help
+- office consultation setting
+
+Good Unsplash search terms:
+- `diverse office meeting`
+- `customer service office`
+- `translation services office`
+- `people discussing documents`
+- `multicultural business meeting`
+
+Best image types:
+- 2 people sitting at desk reviewing documents
+- diverse team in office
+- client consultation with papers or laptop
+- friendly front desk or advisor helping client
+
+For `Mission & Vision` background:
+- clean office desk
+- business meeting
+- city/community professional image
+- subtle workspace, not too busy
+
+Good Unsplash search terms:
+- `professional office desk`
+- `business consultation`
+- `office paperwork`
+- `community business office`
+
+For `Hero` if you ever replace it:
+- tax paperwork
+- calculator and documents
+- professional office consultation
+
+Good Unsplash search terms:
+- `tax documents`
+- `accounting office`
+- `financial consultation`
+
+Best style rules:
+- avoid overly staged corporate handshake photos
+- avoid images with too much empty white brightness
+- avoid tech startup looking photos
+- choose warm, trustworthy, community-oriented photos
+- make sure at least one image shows people
+
+Strong picks for your sections:
+- `We Speak Your Language` → diverse client consultation
+- `Mission & Vision` → subtle office/workspace background
+- optional side image near services → paperwork/help desk image
+
+Recommended exact search pages:
+- `https://unsplash.com/s/photos/diverse-office-meeting`
+- `https://unsplash.com/s/photos/client-consultation`
+- `https://unsplash.com/s/photos/documents-office`
+- `https://unsplash.com/s/photos/multicultural-business-meeting`
+
+Best overall choice for `We Speak Your Language`:
+- a diverse office consultation image with 2 to 4 people reviewing documents
+
+Best overall choice for `Mission & Vision`:
+- a clean professional office desk or consultation image with a dark overlay
+
+If you want, I can pick 3 exact Unsplash image URLs that match your site style.

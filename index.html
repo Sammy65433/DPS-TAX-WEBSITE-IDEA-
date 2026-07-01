@@ -260,29 +260,36 @@
         .stat-strip {
             background: var(--header);
             border-top: 1px solid rgba(255, 255, 255, 0.12);
-            padding: 1.4rem 0;
+            padding: 1.1rem 0;
         }
 
         .stat-strip .container {
             display: flex;
             justify-content: center;
-            gap: 3rem;
+            gap: 1.4rem;
             flex-wrap: wrap;
             text-align: center;
         }
 
+        .stat-strip .container>div {
+            min-width: 110px;
+            max-width: 140px;
+        }
+
         .stat-strip .stat-num {
             font-family: "Fraunces", serif;
-            font-size: 1.7rem;
+            font-size: 1.35rem;
             font-weight: 700;
             color: #fff;
+            line-height: 1.1;
         }
 
         .stat-strip .stat-label {
-            font-size: 0.78rem;
+            font-size: 0.7rem;
             color: #bfe3dd;
             text-transform: uppercase;
-            letter-spacing: 0.4px;
+            letter-spacing: 0.35px;
+            line-height: 1.25;
         }
 
         .section {
@@ -434,25 +441,32 @@
             width: fit-content;
         }
 
-        .contact-form select:disabled {
-            background: #eef1f0;
-            color: #9aa3a0;
-            cursor: not-allowed;
-        }
-
         .realty-banner {
-            background: var(--realty-bg);
-            border: 1px solid #e6d9c2;
-            border-radius: 16px;
-            padding: 1.6rem 1.8rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            max-width: 1150px;
-            margin: 0 auto 1.5rem;
-        }
+  background: var(--realty-bg);
+  border: 1px solid #e6d9c2;
+  border-radius: 16px;
+  padding: 1.6rem 1.8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1150px;
+  margin: 0 auto 1.5rem;
+}
+.realty-text {
+  flex: 4 1 420px;
+}
+
+.realty-contact {
+  flex: 3 1 260px;
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.86rem;
+  color: #6b5d42;
+}
+
+
 
         .realty-banner .realty-text h3 {
             color: var(--realty);
@@ -623,6 +637,80 @@
             gap: 0.9rem;
         }
 
+        .purpose-section {
+            background:
+                linear-gradient(rgba(15, 92, 84, 0.78), rgba(15, 92, 84, 0.78)),
+                url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+        }
+
+        .purpose-section .eyebrow,
+        .purpose-section h2 {
+            color: #ffffff;
+        }
+
+        .language-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.2rem 0 2rem;
+        }
+
+        .language-images img {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 1px solid var(--line);
+        }
+
+        .service-card-image {
+            width: 100%;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 0.9rem;
+            border: 1px solid var(--line);
+        }
+
+        .service-card-image {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 0.9rem;
+            border: 1px solid var(--line);
+        }
+        .map-embed {
+  max-width: 760px;
+  margin: 1.5rem auto 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+.realty-side-image {
+  width: 600px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #e6d9c2;
+  flex-shrink: 0;
+}
+
+
+
+
+        @media (max-width: 700px) {
+            .language-images {
+                grid-template-columns: 1fr;
+            }
+
+            .language-images img {
+                height: 130px;
+            }
+        }
+
+
+
         @media (max-width: 700px) {
             .name-row {
                 grid-template-columns: 1fr;
@@ -718,13 +806,14 @@
 
     <section class="hero">
         <div class="container hero-content">
-            <p class="tag">15+ Years Serving Maplewood, NJ</p>
-            <h1>DPS Tax Preparation and Everyday Business Services You Can Trust</h1>
+            <p class="tag">19+ Years Serving Maplewood, NJ</p>
+            <h1>Dps Tax Preparation & Everyday Business Services You Can Trust</h1>
             <p class="lead">
-                For over 15 years, DPS has handled filing, notary, translation, immigration paperwork,
-                money transfer, and copy/fax for this community, all at one local office, by people who know your
-                documents matter.
+                For over 19 years, DPS has provided trusted tax preparation, document support,
+                immigration assistance, insurance services, and essential business services
+                to individuals, families, and small businesses throughout New Jersey and the Tri-State area.
             </p>
+
             <div class="hero-buttons">
                 <a href="#booking" class="btn">Book a Tax Appointment</a>
                 <a href="tel:9733272340" class="btn btn-ghost">Call the Office</a>
@@ -736,17 +825,32 @@
     <div class="stat-strip">
         <div class="container">
             <div>
-                <div class="stat-num">15+</div>
+                <div class="stat-num">19+</div>
                 <div class="stat-label">Years in Business</div>
             </div>
             <div>
-                <div class="stat-num">6</div>
+                <div class="stat-num">6+</div>
                 <div class="stat-label">Services Offered</div>
             </div>
+
             <div>
-                <div class="stat-num">4</div>
-                <div class="stat-label">Languages Spoken</div>
+                <div class="stat-num">2000+</div>
+                <div class="stat-label">Clients Served</div>
             </div>
+
+            <div>
+                <div class="stat-num">20+</div>
+                <div class="stat-label">Counties Served over Tri-State Area & more</div>
+            </div>
+
+
+            <div>
+                <div class="stat-num">4+</div>
+                <div class="stat-label">Languages Supported</div>
+            </div>
+
+
+
             <div>
                 <div class="stat-num">IRS</div>
                 <div class="stat-label">e-file Authorized</div>
@@ -764,41 +868,66 @@
 
             <div class="card-grid">
                 <div class="card">
+                    <img src="./public/tax-prep2.jpg" alt="Tax preparation service" class="service-card-image" />
                     <h3>Tax Preparation</h3>
                     <p>Professional filing support for individuals and businesses.</p>
                 </div>
+
                 <div class="card">
+                    <img src="./public/notaary4.jpg" alt="Notary public service" class="service-card-image" />
                     <h3>Notary Public</h3>
                     <p>Fast, professional notarization when you need it.</p>
                 </div>
+
                 <div class="card">
+                    <img src="./public/transla1.jpg" alt="Translation service" class="service-card-image" />
                     <h3>Translation</h3>
-                    <p>Document language support so nothing gets lost in translation.</p>
+                    <p>Multilingual document support to help clients understand, complete, and submit important
+                        paperwork with confidence.</p>
                 </div>
+
                 <div class="card">
+                    <img src="./public/transla2.jpg" alt="Immigration services" class="service-card-image" />
                     <h3>Immigration Services</h3>
                     <p>Help with immigration-related forms and paperwork.</p>
                 </div>
+
                 <div class="card">
-                    <h3>Money Transfer</h3>
-                    <p>Secure, convenient transfers.</p>
-                </div>
-                <div class="card">
+                    <img src="./public/copy2.jpg" alt="Copy and fax services" class="service-card-image" />
                     <h3>Copy & Fax</h3>
                     <p>Document copying and faxing on-site.</p>
                 </div>
+
                 <div class="card">
+                    <img src="./public/insurance2.jpg" alt="Insurance services" class="service-card-image" />
+                    <h3>Insurance Services</h3>
+                    <p>Guidance for life, auto, health, and other everyday insurance needs.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./public/real-estate.jpg" alt="Real estate service" class="service-card-image" />
                     <h3>Real Estate</h3>
                     <p>Buying, selling, renting, or investing — handled by our trusted partner.</p>
                     <a href="#realty" class="card-link">Need Help? →</a>
                 </div>
             </div>
+
+
+        </div>
         </div>
     </section>
 
     <section class="section alt">
         <div class="container">
-            <h2 style="text-align:center;">We Speak Your Language</h2>
+            <h2>We Speak Your Language</h2>
+
+            <div class="language-images">
+                <img src="./public/pexels-fauxels-3184638.jpg" alt="Professional multilingual support" />
+                <img src="./public/pexels-paresh-patil-888104-15694429.jpg"
+                    alt="Helping clients with document support" />
+
+            </div>
+
             <div class="lang-strip">
                 <div><strong>English</strong>Professional tax and support services you can trust.</div>
                 <div><strong>Kreyòl</strong>Sèvis taks pwofesyonèl ak sipò ou ka fè konfyans.</div>
@@ -808,22 +937,59 @@
         </div>
     </section>
 
+    </section>
+    <section class="section purpose-section" id="mission-vision">
+        <div class="container">
+            <p class="eyebrow">Our Purpose</p>
+            <h2 class="h2-sub">Dps Mission & Vision</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Dps Mission</h3>
+                    <p>
+                        To provide reliable tax preparation and professional support services with honesty,
+                        care, and respect for every individual, family, and business we serve.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Dps Vision</h3>
+                    <p>
+                        To be a trusted resource throughout New Jersey and the Tri-State area by helping
+                        communities access dependable financial, document, and business support services.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Dps Commitment</h3>
+                    <p>
+                        We are committed to making important services more accessible, understandable,
+                        and dependable for every client who walks through our doors.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <section class="section alt">
         <div class="container">
-            <p class="eyebrow" style="text-align:center;">Why Choose Us</p>
-            <h2 class="h2-sub" style="text-align:center;">Over 15+ Years of Trusted Service</h2>
+            <p class="eyebrow" style="text-align:center;">Why Choose Dps Professional Tax & Professional Support
+                Services?</p>
+            <h2 class="h2-sub" style="text-align:center;"> 19+ Years of Trusted Service</h2>
             <p class="section-text" style="margin-left:auto;margin-right:auto;text-align:center;">
-                With over 15 years of experience, We have served more than 2,000 clients throughout New Jersey and the
+                With over 19 years of experience, We have served more than 2,000 clients throughout New Jersey and the
                 Tri-State area with trusted Tax Preparation and Professional Support Services.
             </p>
 
             <div class="card-grid">
                 <div class="card">
-                    <h3>15+ Years of Experience</h3>
+                    <img src="./public/pro2.jpg" alt="Professional experience" class="service-card-image" />
+                    <h3>19+ Years of Experience</h3>
                     <p>Long-standing knowledge of tax law and what local families and businesses actually need.</p>
                 </div>
 
                 <div class="card">
+                    <img src="./public/officelocation-1.jpg" alt="DPS office location in Maplewood"
+                        class="service-card-image" />
                     <h3>One Convenient Location</h3>
                     <p>Visit us for tax, document, and support services at our Maplewood office.</p>
                     <a href="https://www.google.com/maps/search/1811+Springfield+Ave+Maplewood+NJ+07040" target="_blank"
@@ -833,10 +999,13 @@
                 </div>
 
                 <div class="card">
+                    <img src="./public/trusted-com1.jpg" alt="Trusted community support"
+                        class="service-card-image" />
                     <h3>Trusted in Maplewood</h3>
                     <p>A familiar name for residents who keep coming back year after year.</p>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -854,6 +1023,16 @@
                     <input type="text" name="last_name" placeholder="Last Name" required />
                 </div>
 
+                <div class="card">
+                    <h3>Clients can Upload Documents to the Affirm Portal</h3>
+                    <p>Access the Affirm portal quickly and securely online.</p>
+                    <a href="https://your-affirm-portal-link.com" target="_blank" rel="noopener noreferrer"
+                        class="card-link">
+                        Click to Open Affirm Portal
+                    </a>
+                </div>
+
+
                 <input type="tel" name="phone" placeholder="Phone Number" required />
                 <input type="email" name="email" placeholder="Email Address" />
 
@@ -864,15 +1043,18 @@
                     <option>Notary Public</option>
                     <option>Translation Services</option>
                     <option>Immigration Services</option>
-                    <option>Money Transfer</option>
+                    <option>Insurance Services</option>
                 </select>
 
-                <select id="preparer-select" disabled>
-                    <option value="">Select a Tax Preparer (choose Tax Preparation first)</option>
-                    <option>Tax Preparer 1</option>
-                    <option>Tax Preparer 2</option>
-                    <option>Tax Preparer 3</option>
+                <select id="preparer-select" name="tax_preparer">
+                    <option value="">Select a Preparer</option>
+                    <option>Pierre Polidor</option>
+                    <option>Dalia Pierre</option>
+                    <option>Severe Jacquet</option>
+                    <option>Jean P Cifrant</option>
+                    <option>Ricot Casimir</option>
                 </select>
+
                 <label for="appointment-date">Preferred Date</label>
                 <input type="date" name="appointment_date" required />
                 <label for="appointment-time">Preferred Time</label>
@@ -889,6 +1071,7 @@
     <section class="section alt" id="realty">
         <div class="realty-banner">
             <div class="realty-text">
+                <img src="./public/real-estate.jpg" alt="Real estate services" class="realty-side-image" />
                 <h3>Need Real Estate Help?</h3>
                 <p>Our partner Ricot Casmir of RC Realty Group handles Buying, Selling, Renting, and Investment
                     property.</p>
@@ -945,6 +1128,18 @@
                 <p class="irs-contact-note">IRS e-file Authorized Agent</p>
             </div>
         </div>
+        <div class="map-embed">
+  <iframe
+    src="https://www.google.com/maps?q=1811+Springfield+Ave+Maplewood+NJ+07040&output=embed"
+    width="100%"
+    height="250"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
     </section>
 
 
@@ -956,21 +1151,7 @@
     </footer>
 
 
-    <script>
-        const serviceSelect = document.getElementById("service-select");
-        const preparerSelect = document.getElementById("preparer-select");
 
-        if (serviceSelect && preparerSelect) {
-            serviceSelect.addEventListener("change", function () {
-                if (this.value === "Tax Preparation") {
-                    preparerSelect.disabled = false;
-                } else {
-                    preparerSelect.disabled = true;
-                    preparerSelect.value = "";
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
